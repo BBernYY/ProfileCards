@@ -24,7 +24,7 @@ main {
   display: grid;
   background-color: #272B2F;
   color: #fff;
-  max-height: 80vh;
+  height: 80vh;
   overflow-y: scroll;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin: 0;
@@ -37,21 +37,25 @@ footer > h2 {
   background-color: #484f57;
   border-radius: 15px;
   padding: 5%;
+  display: flex;
+  flex-direction: column;
 }
 .profile-image {
-  padding: 3%;
   border-radius: 15px;
+  display: block;
+  width: 100%
 }
 .social-button {
   text-decoration: none;
   color: #272B2F;
-  padding: 3%;
-  padding-top: 3%;
   background-color: #484f57;
-  margin: 5%;
   border-radius: 15px;
   transition-duration: 0.5s;
+  padding-top: 5px;
   border: 2px solid #272B2F;
+  display: block;
+  width: 100%;
+  margin-top: auto;
 }
 .social-button:hover {
     background-color: #2C3036;
@@ -59,11 +63,14 @@ footer > h2 {
 
 }
 footer {
-  height: 6vh;
+  min-height: 10vh;
   background-color: #2C3036;
   margin: 0;
+  padding: 0;
   text-align: center;
   color: #fff;
-  padding-top:4vh;
   border-color: #2C3036;
+}
+.root {
+  display: flex;
 }

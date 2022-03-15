@@ -1,12 +1,12 @@
-export default function Card() {
-    return(
+export default function Card({name, desc, social_link, profile}) {
+    return (
         <div className="profile-card" align="center">
-            <img alt="" width="200" className="profile-image" src="https://thispersondoesnotexist.com/image"/>
-            <h2>Charlie Fisher</h2>
+            <img alt="" width="200" className="profile-image" src={profile}/>
+            <h2>{name}</h2>
             <p>
-                I like to fish, and I enjoy cooking and hiking. I work as a Software engineer at Facebook. I live in Dallas, Texas.
+                {desc}
             </p>
-            <a className="social-button" href="localhost:3000">Contact</a>
+            <a className="social-button" href={social_link}>Contact</a>
         </div>
     )
 }
